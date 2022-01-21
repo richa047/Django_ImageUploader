@@ -1,0 +1,22 @@
+
+https://www.youtube.com/watch?v=5TwCVOyYR4U
+
+1.Create project imageuploader
+2.Create app in project
+3.In setting.py of imageuploader (inner proj) install app name and declare Dir[].
+4.create template under myapp->template->myapp-home.html
+5.create model
+6.save migration and then migrate model
+7.create superuser
+8.open 127.0.0.1:8000/admin
+
+9.create media folder by declaring it.
+10.now write code in home.html
+11.In myapp view.py function  write code
+12.in myapp urls.py write the path.
+
+how to run the project
+1.open your project folder imageuploader using vs code.
+2. now run manage.py runserver as follows
+~/Documents/django_project/imageuploader$ python3 manage.py runserver
+3. now click on the IP address of development server given ie  http://127.0.0.1:8000/

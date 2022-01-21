@@ -1,0 +1,14 @@
+1.create project()
+   django-admin startproj weatherProject
+2.create app under outerproj folder(weatherProject)
+    python3 manage.py startapp weatherApp
+3.install app in setting.py of weatherProject(inner folder)
+   whenever u need to add css/js/image file u need to add static 
+4.in weatherApp create url.py
+
+how to run  the project
+1.open the proj folder using  vs code
+Documents/django_project/weatherProject
+
+2.
+Documents/django_project/weatherProject$ python3 manage.py runserver

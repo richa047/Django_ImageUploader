@@ -1,0 +1,5 @@
+1.create project name portfolio
+2.create app name base 
+3.In portfolio(inner proj)  setting.py install the app in installed['base',]
+4.create template folder ie base->templates->base-home.html
+5. in base view.py write render func ie what output will be sent on screen.

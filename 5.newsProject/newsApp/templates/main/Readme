@@ -1,0 +1,11 @@
+create project
+create app
+in settings.py declare the app
+create urls.py in app.
+create static folder(image) under app.
+create template under app for .html files
+install news api so that u can use it
+install pillow  so that u can use it.
+
+
+https://www.youtube.com/watch?v=Mh69OwfeDkA

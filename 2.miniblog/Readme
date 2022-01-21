@@ -1,0 +1,33 @@
+--------------------------------Basic steps----------------------------------------
+1. create project  miniblog
+    django-admin startproject miniblog.
+2.create app in project - python3 manage.py startapp blog.
+3.install application 'blog' in miniblog(inner folder)-.setting.py
+4.create templates\blog folder in blog(application) folder for html files.
+5.create static\blog folder in blog(application) folder for css,js,images files.
+6.download bootstrap from https://getbootstrap.com/ -> unzip it -->,
+from css folder ->copy only bootstrap.css file  to static/blog/css folder
+from js folder -> copy only bootstrap.js to static/blog/js folder
+7. for dependency like  popper & jquery[create 2 files named jquery.js & popper.js file under static/blog/static]
+jquery.js- https://code.jquery.com/jquery-3.6.0.js   (copy the code from here and paste it in static/blog/static/js/jquery.js)
+popper.js-  https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js (copy the code from here and paste it in static/blog/static/js/popper.js)
+
+------------------------------template design------------
+8.create basic.html(making  skeleton esign that will be common in all pages )
+9.in basic.html write code 
+10.write code for home.html then render in view.py and give path in urls.py
+11.after front end work create model in model.py ie blog/model.py  ie name post and field title and desc.
+12.make migration ,migrate,superuser.then register model with blog/admin.py
+13.
+ '''Signup
+def user_signup(request):
+ if request.method == "POST":
+   form = SignUpForm(request.POST)
+   if form.is_valid():
+     messages.success(request, 'Congratulations!! you have become an author')
+     form.save()
+     
+   else:
+    form =SignUpForm()
+   return render(request,'blog/signup.html', {'form':form})'''
+

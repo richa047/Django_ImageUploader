@@ -1,0 +1,31 @@
+1.create project crudproject
+2.create app
+install app name in an settings .py of crudproject(inner folder)
+3.create static folder under enrollapp
+download bootstrap and extract the file css->bootstrap.min ,js-.bootstrap.min and store the 2 files in static/enrollapp/css & static/enrollapp/js(rest u can delete)
+3.create static folder under enrollapp
+4.create template  folder to add hyml file under enrollapp.
+5.create base.html to display common things in page 
+then design rest 2 pages and inherit template base.html in other templates(addandshow.html,updatestudent.html)
+6.enrollapp->view.py to render html pages on calling up of function.
+7.crudproj(innerfolder) urls.py { flow goes urls--->view---->htmlfile}
+NOTE 2 methods to create form  -----form api(form,model,using model class table will get created and d) or modal form(model class and using that u can build form u dont need to write field seperately)
+8.modal form method
+create class(user) in models.py and register it in admin.pys{u need to register modal with admin.py so that u can see the table on admin panel}
+create model,migration,migrate,superuser 
+9.in enrollapp>admin.py register the model so that you can access the table created  by this model
+10.create form.py in enrollapp. and create class StudentRegistration in it,
+11.go to views.py import form and check for POST method or GET method.
+12.go to addandshow .html
+
+ BE part 
+now storing data in database once u have entered the data in form
+flow-url->view->.html file
+
+
+Status of proj: **edit function not working video last 10 mins left to do bec of error.
+
+
+https://www.youtube.com/watch?v=OPc_oMgjhpM
+
+

@@ -1,0 +1,23 @@
+A) Creating a shopping Cart project
+1./Documents/django_project$ django-admin startproject myshop
+2./Documents/django_project$ cd myshop
+3.django-admin startapp shop
+4.settings.py declare shop
+5.create product, catlog.
+
+B)Create Category,Product models
+6.~/Documents/django_project/myshop/shop$ python3 -m pip install Pillow==5.1.0
+7./Documents/django_project/myshop$ python3 manage.py makemigrations
+8.python3 manage.py migrate(the db is snyced now with ur models)
+
+C)Registering catlog models on the admin site.
+9.register models declared in model.py in admin.py
+10.create super user. (python3 manage.py createsuperuser)
+11.building catlog view
+
+
+how to run the project
+1./Documents/django_project/myshop$ python3 manage.py runserver
+
+*** 
+check billing part
